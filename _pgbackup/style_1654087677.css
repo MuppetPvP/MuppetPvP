@@ -1,83 +1,80 @@
-/* MRVIBE'S CSS*/
-
+/* MRVIBE'S CSS */
 body {
-	font-family: 'Roboto', sans-serif !important;
-	background: #000000;
+    font-family: 'Roboto', sans-serif !important;
+    background: #000000;
     color: #989ca2;
 }
+
 a {
-	transition: 0.3s all !important;
-	text-decoration: none !important;
-	color: #fff;
+    transition: 0.3s all !important;
+    text-decoration: none !important;
+    color: #fff;
 }
+
 a:hover {
-	color: #1179e8;
+    color: #1179e8;
 }
+
 .SocialLinks a:hover {
     transform: scale(1.1);
     filter: drop-shadow(2px 4px 6px rgb(20, 220, 73));
 }
 
-
-
-
-
-
-
-
-/*RESPONSIVENESS*/
-
-
+/* RESPONSIVENESS */
 @media (max-width: 786px) {
+    #LogoAnim h3 {
+        font-size: 72px !important;
+    }
 
-	#LogoAnim h3 {
-    	font-size: 72px !important;
-	}
-	.SocialLinks {
-   		margin: 0px auto !important;
-	}
-	.InfoBlock h3 {
-    	font-size: 32px !important;
-	}
-	.InfoBlock p {
-		font-size: 16px !important;
-		width: 80% !important;
-	}
-	.post-feed {
-    	grid-gap: 0px !important;
-	}
-	.FAQContent {
-    	flex-direction: column !important;
-	}
-	.FAQMain , .FAQSidebar iframe {
-    	width: 100% !important;
-	}
-	.site-footer .container {
-		padding: 25px 0px !important;
-	}
-	.site-footer-nav ul {
-    	margin: 10px 0px !important;
-    	position: relative !important;
-	}
-	.site-footer .inner {
-    	display: flex !important;
-    	flex-direction: column-reverse !important;
-	}
-	footer.site-footer.outer {
-		padding: 40px 20px !important;
-	}
-	
+    .SocialLinks {
+        margin: 0px auto !important;
+    }
+
+    .InfoBlock h3 {
+        font-size: 32px !important;
+    }
+
+    .InfoBlock p {
+        font-size: 16px !important;
+        width: 80% !important;
+    }
+
+    .post-feed {
+        grid-gap: 0px !important;
+    }
+
+    .FAQContent {
+        flex-direction: column !important;
+    }
+
+    .FAQMain ,
+    .FAQSidebar iframe {
+        width: 100% !important;
+    }
+
+    .site-footer .container {
+        padding: 25px 0px !important;
+    }
+
+    .site-footer-nav ul {
+        margin: 10px 0px !important;
+        position: relative !important;
+    }
+
+    .site-footer .inner {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+
+    footer.site-footer.outer {
+        padding: 40px 20px !important;
+    }
 }
 
-
-
-
-
-
-
-/*HEADER*/
+/* HEADER */
 #Header {
-    background: url(media.discordapp.net\attachments\840245973712371783\867091875608789032\chocapic1327s20shaders.png);
+    background: url();
+    data: image/jpeg;
     padding: 50px 0px;
     background-size: cover;
     background-position: center;
@@ -90,25 +87,20 @@ a:hover {
     grid-gap: 75px;
 }
 
-
-
-
 .SocialLinks {
     display: flex;
     align-items: center;
     grid-gap: 20px;
 }
+
 .SocialLinks svg {
     width: 32px;
     height: 32px;
     color: #14dc49;
 }
 
-
-
-
 #NavBar {
-	display: none;
+    display: none;
     box-shadow: 0px 5px 30px rgb(0 0 0 / 5%);
     width: 100%;
     background: rgba(255,255,255,0.2);
@@ -116,35 +108,39 @@ a:hover {
     border: 2px solid rgba(255,255,255,0.3);
     backdrop-filter: blur(5px);
     top: 0;
-	padding: 25px;
+    padding: 25px;
 }
+
 .InfoBlock {
     align-items: flex-end;
     justify-content: space-between;
-	position: relative;
+    position: relative;
 }
+
 .Logo {
     margin-top: 35px;
 }
+
 .Logo img {
     animation: LogoAnim;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
 }
+
 @keyframes LogoAnim {
-	
-	0% {
-		transform: translateY(0px);
-		filter: drop-shadow(1px 3px 5px black);
-	}
-	100% {
-		transform: translateY(-5px);
-		filter: drop-shadow(2px 5px 5px #14dc49);
-	}
-	
-}	
+    0% {
+        transform: translateY(0px);
+        filter: drop-shadow(1px 3px 5px black);
+    }
+
+    100% {
+        transform: translateY(-5px);
+        filter: drop-shadow(2px 5px 5px #14dc49);
+    }
+}
+
 .Info {
     text-align: center;
     display: flex;
@@ -152,6 +148,7 @@ a:hover {
     justify-content: center;
     flex-direction: column;
 }
+
 .InfoBlock h3 {
     font-size: 48px;
     font-weight: 700;
@@ -166,8 +163,9 @@ a:hover {
     text-shadow: 0px 4px 10px rgb(255 255 255 / 6%);
     letter-spacing: 0.2em;
     text-transform: uppercase;
-	margin: 30px 0px 15px;
+    margin: 30px 0px 15px;
 }
+
 .InfoBlock p {
     font-family: Roboto;
     font-style: normal;
@@ -182,6 +180,7 @@ a:hover {
     line-height: 30px;
     color: #fff;
 }
+
 .Download {
     color: #ddd;
     border-style: solid;
@@ -195,31 +194,30 @@ a:hover {
     font-size: 22px;
     margin-top: 20px;
     text-transform: uppercase;
-	filter: brightness(0.6) grayscale(0.5);
-	transition: 0.3s all !important;
+    filter: brightness(0.6) grayscale(0.5);
+    transition: 0.3s all !important;
 }
+
 .Download:hover {
     color: #fff;
     transform: translateY(-5px);
     filter: brightness(1) grayscale(0);
-	letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 
-
-
-
-
-/*DOWNLOADS*/
+/* DOWNLOADS */
 .container.downloads {
     margin-top: -80px;
     z-index: 100000;
     position: relative;
 }
+
 .DownloadGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
 }
+
 .download-block {
     background: #0C0D0E;
     border-radius: 15px;
@@ -227,25 +225,30 @@ a:hover {
     align-items: center;
     justify-content: center;
     height: 300px;
-	background-size: cover !important;
-	background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
+
 .download-block.Windows {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    background: url(media.discordapp.net/attachments/840245973712371783/867092347565244456/maxresdefault.png);
+    background: url(../media.discordapp.net/attachments/840245973712371783/867092347565244456/maxresdefault.png);
 }
+
 .download-block.MacOS {
-	border-radius: 0px !important;
-	background: url(media.discordapp.net/attachments/840245973712371783/867091875608789032/chocapic1327s20shaders.png);
+    border-radius: 0px !important;
+    background: url(../media.discordapp.net/attachments/840245973712371783/867091875608789032/chocapic1327s20shaders.png);
 }
+
 .MacOS .OsDownload {
     display: flex;
 }
+
 a.Intel {
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
 }
+
 a.Apple {
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
@@ -254,15 +257,17 @@ a.Apple {
 .download-block.Linux {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-	flex-direction: column;
-	background: url(media.discordapp.net/attachments/840245973712371783/867092511410487346/549617-minecraft-shaders.png);
+    flex-direction: column;
+    background: url(../media.discordapp.net/attachments/840245973712371783/867092511410487346/549617-minecraft-shaders.png);
 }
+
 .OsImage svg {
     width: 50px;
     height: 50px;
     color: #fff;
     filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.5));
 }
+
 .OsInfo h3 {
     margin: 0px;
     font-size: 28px;
@@ -272,6 +277,7 @@ a.Apple {
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0px 3px 5px rgb(0 0 0 / 15%);
 }
+
 .OsDownload a {
     color: #fff;
     font-weight: 600;
@@ -283,8 +289,9 @@ a.Apple {
     display: block;
     margin: 20px 0px;
 }
+
 .OsDownload a:hover {
-	background: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.4);
 }
 
 .Instructions ul {
@@ -293,9 +300,10 @@ a.Apple {
     list-style: auto;
     font-size: 25px;
     font-weight: 700;
-	padding-left: 70px;
+    padding-left: 70px;
     color: #585858;
 }
+
 .Instructions ::marker {
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
@@ -308,6 +316,7 @@ a.Apple {
     justify-content: space-between;
     margin: 100px auto 180px auto;
 }
+
 .Video {
     height: 350px;
     border-radius: 20px;
@@ -315,42 +324,38 @@ a.Apple {
     background: #0c0d0e;
 }
 
-
-
-
-
-
-
-
-/*POSTS*/
-
-
+/* POSTS */
 article-title {
     color: #fff;
     text-align: center;
 }
+
 .post-card-content {
     position: absolute;
     bottom: 50px;
     left: 20px;
 }
+
 h2.post-card-title {
     margin: 0px;
     color: #fff;
     font-weight: 800;
 }
+
 .post-card-image {
     background: transparent !important;
-	border-radius: 10px;
+    border-radius: 10px;
 }
+
 .post-overlay {
     background: linear-gradient(
 45deg, rgb(161 19 58 / 54%), rgb(0 0 0 / 24%));
     position: absolute;
     width: 100%;
     height: 100%;
-	border-radius: 10px;
+    border-radius: 10px;
 }
+
 .CrystalWatermark {
     position: absolute;
     bottom: 0;
@@ -364,29 +369,32 @@ h2.post-card-title {
 -15deg);
     filter: blur(3px) grayscale(0.4) opacity(0.2);
 }
-@media (min-width: 1000px) {
 
-article.post-card.post:first-child {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;
+@media (min-width: 1000px) {
+    article.post-card.post:first-child {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    article.post-card.post:nth-child(2) {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-content: center;
+    }
+
+    article.post-card.post:nth-child(3) {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    article.post-card.post:nth-child(4) {
+        grid-row-start: 3;
+    }
 }
-article.post-card.post:nth-child(2) {
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-	justify-content: center;
-}
-article.post-card.post:nth-child(3) {
-    grid-column-start: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-article.post-card.post:nth-child(4) {
-    grid-row-start: 3;
-}
-	
-}
+
 .article-title {
     font-family: Roboto;
     font-style: normal;
@@ -403,70 +411,53 @@ article.post-card.post:nth-child(4) {
     -webkit-text-stroke: 4px transparent;
     color: black;
 }
+
 .gh-content>[id] {
     margin: 0;
     color: #fff !important;
 }
+
 .gh-canvas .article-image {
     grid-column: wide-start/wide-end;
     width: 80%;
     margin: 6vmin auto 6vmin;
-	border-radius: 10px;
+    border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-/*FEATURES*/
-
+/* FEATURES */
 .block {
-  overflow: hidden;
-  width: 100%;
-  margin: 50px auto;
-  padding: 50px 0px;
-  margin-bottom: 100px;
+    overflow: hidden;
+    width: 100%;
+    margin: 50px auto;
+    padding: 50px 0px;
+    margin-bottom: 100px;
 }
+
 .block img {
-  border-radius: 5px;
-  transition: 0.3s all !important;
-  box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    transition: 0.3s all !important;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
 }
+
 .block img:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
 }
+
 .animation {
-  width: auto;
-  height: 100px;
-  font-size: 0px;
+    width: auto;
+    height: 100px;
+    font-size: 0px;
 }
+
 .animation div {
-  display: inline-block;
-  width: auto;
-  float: none;
-  padding: 0 10px;
+    display: inline-block;
+    width: auto;
+    float: none;
+    padding: 0 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*FAQ*/
-
-
+/* FAQ */
 .FAQ h2 {
     margin: 0 0 1em;
     font-family: Roboto;
@@ -485,19 +476,19 @@ article.post-card.post:nth-child(4) {
 }
 
 .FAQ input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
 }
 
 .FAQContent {
     display: flex;
-	grid-gap: 25px;
+    grid-gap: 25px;
 }
+
 .FAQMain {
     width: 75%;
 }
-
 
 /* Accordion styles */
 .FAQ .tabs {
@@ -509,11 +500,12 @@ article.post-card.post:nth-child(4) {
 }
 
 .FAQ .tab {
-  width: 100%;
-  color: white;
-  overflow: hidden;
-  border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
 }
+
 .FAQ .tab-label {
     display: flex;
     justify-content: space-between;
@@ -523,16 +515,19 @@ article.post-card.post:nth-child(4) {
     cursor: pointer;
     border-radius: 10px;
 }
+
 .FAQ .tab-label:hover {
-  background: #212121;
+    background: #212121;
 }
+
 .FAQ .tab-label::after {
-  content: "❯";
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  transition: all 0.35s;
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
 }
+
 .FAQ .tab-content {
     max-height: 0;
     padding: 0 1.5em;
@@ -542,50 +537,45 @@ article.post-card.post:nth-child(4) {
     background: #1c1c1c;
     transition: all 0.35s;
 }
+
 .FAQ .tab-close {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em;
-  font-size: 0.75em;
-  background: #2c3e50;
-  cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer;
 }
+
 .FAQ .tab-close:hover {
-  background: #212121;
+    background: #212121;
 }
 
 .FAQ input:checked + .tab-label {
-  background: #1c1c1c;
-}
-.FAQ input:checked + .tab-label::after {
-  transform: rotate(90deg);
-}
-.FAQ input:checked ~ .tab-content {
-  max-height: 100vh;
-  padding: 1em;
-  margin-top: 15px;
+    background: #1c1c1c;
 }
 
+.FAQ input:checked + .tab-label::after {
+    transform: rotate(90deg);
+}
+
+.FAQ input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+    margin-top: 15px;
+}
 
 .FAQSidebar iframe {
     height: 500px;
 }
 
-
-
-
-
-
-
-
-
-
-/*FOOTER*/
+/* FOOTER */
 footer {
     background: transparent !important;
     margin: 0px !important;
     padding: 40px !important;
 }
+
 footer.site-footer {
     font-family: Roboto;
     font-style: normal;
@@ -597,14 +587,17 @@ footer.site-footer {
     line-height: 30px;
     color: #fff;
 }
+
 .site-footer .container {
     background: rgba(255,255,255,0.1);
     border-radius: 10px;
     padding: 40px 0px;
 }
+
 .site-footer .inner {
     position: relative;
 }
+
 .site-footer-nav ul {
     margin: 0px !important;
     position: absolute;
@@ -612,37 +605,22 @@ footer.site-footer {
     left: 0;
     right: 0;
 }
+
 .copyright {
     font-size: 16px;
     font-weight: 900;
 }
+
 .site-footer .copyright a {
     font-weight: 900 !important;
 }
+
 .site-footer div {
     z-index: 1000;
     position: relative;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*ANIMATION BOIII*/
-
-
+/* ANIMATION BOIII */
 .intro {
     background: black;
     position: fixed;
@@ -654,8 +632,9 @@ footer.site-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .slider {
+}
+
+.slider {
     background: linear-gradient(180deg, #1cb645 5%, #14dc49 91%);
     position: fixed;
     top: 0;
@@ -664,60 +643,63 @@ footer.site-footer {
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-  }
-  
-  .intro-text {
+}
+
+.intro-text {
     color: rgb(233, 233, 233);
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
     z-index: 10000;
-  }
-  
-  .hidee {
+}
+
+.hidee {
     background: black;
     overflow: hidden;
     z-index: 10000;
-  }
-  
-  .hidee span {
+}
+
+.hidee span {
     transform: translateY(100%);
     display: inline-block;
-    
-  }
-  #LogoAnim{
-    position:relative;
-    width:800px;
-    height:300px;
-    background-color:#000;
-    margin:auto;
+}
+
+#LogoAnim {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    background-color: #000;
+    margin: auto;
     z-index: 10000;
-    overflow:hidden;
-  }
-  
-  #LogoAnim h3 {
+    overflow: hidden;
+}
+
+#LogoAnim h3 {
     position: absolute;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    font-weight:700;
-    margin:0;
-    padding:0;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
     z-index: 10003 !important;
     font-size: 100px;
     font-weight: 800;
     text-transform: uppercase;
+
     /* Warning: no fallback */
     background: -webkit-linear-gradient(-86deg, #1cb645 5%, #14dc49 91%);
     -webkit-background-clip: text;
     -webkit-text-stroke: 12px transparent;
     color: #000;
-    width:800px;
-    text-align:center;
-/*     visibility:hidden; */
-    top:65px;
+    width: 800px;
+    text-align: center;
+
+    /* visibility:hidden; */
+    top: 65px;
     font-size: 128px;
     text-shadow: 0px 4px 10px 0px rgba(255,255,255,0.1);
     font-family: 'Roboto', sans-serif;
-  } 
-  .slideshow__pause {
+}
+
+.slideshow__pause {
     display: none;
 }

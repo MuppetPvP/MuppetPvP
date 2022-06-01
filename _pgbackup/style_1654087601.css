@@ -77,7 +77,7 @@ a:hover {
 
 /*HEADER*/
 #Header {
-    background: url(media.discordapp.net\attachments\840245973712371783\867091875608789032\chocapic1327s20shaders.png);
+    background: url(../cdn.discordapp.com/attachments/840245973712371783/885067439040253982/CrystalBG.png);
     padding: 50px 0px;
     background-size: cover;
     background-position: center;
@@ -233,11 +233,11 @@ a:hover {
 .download-block.Windows {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    background: url(media.discordapp.net/attachments/840245973712371783/867092347565244456/maxresdefault.png);
+    background: url(../media.discordapp.net/attachments/840245973712371783/867092347565244456/maxresdefault.png);
 }
 .download-block.MacOS {
 	border-radius: 0px !important;
-	background: url(media.discordapp.net/attachments/840245973712371783/867091875608789032/chocapic1327s20shaders.png);
+	background: url(../media.discordapp.net/attachments/840245973712371783/867091875608789032/chocapic1327s20shaders.png);
 }
 .MacOS .OsDownload {
     display: flex;
@@ -255,7 +255,7 @@ a.Apple {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
 	flex-direction: column;
-	background: url(media.discordapp.net/attachments/840245973712371783/867092511410487346/549617-minecraft-shaders.png);
+	background: url(../media.discordapp.net/attachments/840245973712371783/867092511410487346/549617-minecraft-shaders.png);
 }
 .OsImage svg {
     width: 50px;
